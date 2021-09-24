@@ -18,7 +18,7 @@ namespace Chystokil
                 Stopwatch stopWatch = new Stopwatch();
 
                 stopWatch.Start();
-                string str = encrypt(text, 4);
+                string str = encryptBlock(text, 4, 25);
                 stopWatch.Stop();
 
                 using (FileStream fstream = new FileStream(EncryptTxt, FileMode.OpenOrCreate))
@@ -40,7 +40,7 @@ namespace Chystokil
                 Stopwatch DecrypClock = new Stopwatch();
 
                 DecrypClock.Start();
-                string strg = decrypt(encodeText, 4);
+                string strg = decryptBlock(encodeText, 4, 25);
                 DecrypClock.Stop();
 
                 using (FileStream fstream = new FileStream(DecryptTxt, FileMode.OpenOrCreate))
@@ -99,14 +99,21 @@ namespace Chystokil
             string[] res = new string[str.Length / block + 1];
             string result = "";
             int j = 0;
-            for (int i = 0; i < res.Length; i+=block)
+            for (int i = 0; i < str.Length; i += block)
             {
-                res[j] = str.Substring(i, block);
+                try
+                {
+                    res[j] = str.Substring(i, block);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("+1/n");
+                }
                 j++;
             }
             foreach (var item in res)
             {
-                result += encrypt(item, key);
+                if (item != null) result += encrypt(item, key);
             }
             return result;
         }
@@ -117,14 +124,21 @@ namespace Chystokil
             {
                 string[] res = new string[str.Length / block];
                 int j = 0;
-                for (int i = 0; i < res.Length; i+=block)
+                for (int i = 0; i < str.Length; i += block)
                 {
-                    res[j] = str.Substring(i, block);
+                    try
+                    {
+                        res[j] = str.Substring(i, block);
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("+1/n");
+                    }
                     j++;
                 }
                 foreach (var item in res)
                 {
-                    result += decrypt(item, key);
+                    if (item != null) result += decrypt(item, key);
                 }
             }
             catch (Exception)
