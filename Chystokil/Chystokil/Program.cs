@@ -9,9 +9,9 @@ namespace Chystokil
     {
         static void Main(string[] args)
         {
-            string MainTxt = @"C:\Users\PC\source\repos\Chystokil\Chystokil\txt.txt";
-            string EncryptTxt = @"C:\Users\PC\source\repos\Chystokil\Chystokil\encrypt.txt";
-            string DecryptTxt = @"C:\Users\PC\source\repos\Chystokil\Chystokil\decrypt.txt";
+            string MainTxt = @"C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\txt.txt";
+            string EncryptTxt = @"C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\encrypt.txt";
+            string DecryptTxt = @"C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\decrypt.txt";
             using (StreamReader sr = new StreamReader(MainTxt))
             {
                 var text = sr.ReadToEnd().ToString();
@@ -98,9 +98,11 @@ namespace Chystokil
         {
             string[] res = new string[str.Length / block + 1];
             string result = "";
-            for (int i = 0; i < res.Length; i++)
+            int j = 0;
+            for (int i = 0; i < res.Length; i+=block)
             {
-                res[i] = str.Substring(i, block);
+                res[j] = str.Substring(i, block);
+                j++;
             }
             foreach (var item in res)
             {
@@ -114,9 +116,11 @@ namespace Chystokil
             try
             {
                 string[] res = new string[str.Length / block];
-                for (int i = 0; i < res.Length; i++)
+                int j = 0;
+                for (int i = 0; i < res.Length; i+=block)
                 {
-                    res[i] = str.Substring(i, block);
+                    res[j] = str.Substring(i, block);
+                    j++;
                 }
                 foreach (var item in res)
                 {

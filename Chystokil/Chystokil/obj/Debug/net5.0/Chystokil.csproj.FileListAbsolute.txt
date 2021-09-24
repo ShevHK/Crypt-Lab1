@@ -1,0 +1,16 @@
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\Chystokil.exe
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\Chystokil.deps.json
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\Chystokil.runtimeconfig.json
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\Chystokil.runtimeconfig.dev.json
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\Chystokil.dll
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\ref\Chystokil.dll
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\bin\Debug\net5.0\Chystokil.pdb
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.AssemblyInfo.cs
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.dll
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\ref\Chystokil.dll
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.pdb
+C:\Users\PC\Desktop\crypt\Crypt-Lab1\Chystokil\Chystokil\obj\Debug\net5.0\Chystokil.genruntimeconfig.cache
